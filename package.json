@@ -1,0 +1,15 @@
+{
+    "name": "budi-node-service",
+    "version": "1.0.0",
+    "description": "Node.js service for Budi project",
+    "main": "src/index.js",
+    "scripts": {
+      "start": "node src/index.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "axios": "^0.21.1",
+      "node-microphone": "^0.0.5",
+      "electron": "^25.0.0"
+    }
+}
