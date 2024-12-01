@@ -1,0 +1,5 @@
+PyQt5
+SpeechRecognition
+requests
+rumps
+keyboard
