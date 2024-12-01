@@ -37,7 +37,7 @@ Budi is a groundbreaking AI agent that redefines how developers interact with co
   Enables natural language processing for real-time assistance and intelligent code interactions. Voiceflow has seamless connectivity with multiple AI models, and we utilize ChatGPT 4-o mini to keep response quality and query speed optimized.
 
 - **Cloudflare Workers**  
-  A **serverless backend** that ensures low-latency communication between Budi’s AI engine and your environment.
+  A **serverless backend** that ensures low-latency communication between Budi’s AI engine and your environment. This cloud service saves backups of code, and is leveraged for high-speed 
 
 - **VSCode Extensions**  
   A custom extension developed to ensure Budi’s functionalities are tightly coupled with your coding environment.
