@@ -5,3 +5,6 @@ rumps
 keyboard
 vosk
 PyAudio
+pynput
+gtts
+playsound

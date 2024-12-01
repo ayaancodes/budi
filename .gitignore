@@ -17,9 +17,6 @@ venv.bak/
 dist/
 build/
 
-# Vosk model directory
-models/vosk-model-small-en-us-0.15/
-
 # MacOS App build files
 MacApp/build/
 MacApp/DerivedData/
