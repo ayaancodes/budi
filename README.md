@@ -1,5 +1,5 @@
 # Budi: Your AI-Powered Coding Companion  
-_Refer to the other branches for the full code implementation._
+_Refer to the cloudFlare branch for the VSCode Extension and Cloudflare connection; toolbar-python for the Python GUI and helper service._
 
 Budi is a groundbreaking AI agent that redefines how developers interact with code. It eliminates the need for copy-pasting solutions and instead provides a **NO COPY & PASTE Solution** through seamless integration and real-time updates directly within your coding environment.
 
