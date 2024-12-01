@@ -34,7 +34,7 @@ Budi is a groundbreaking AI agent that redefines how developers interact with co
   PyQt provides a robust GUI framework for local application interaction, enabling Budi's interface to integrate effortlessly with your machine.
 
 - **Voiceflow AI Agents**  
-  Enables natural language processing for real-time assistance and intelligent code interactions.
+  Enables natural language processing for real-time assistance and intelligent code interactions. Voiceflow has seamless connectivity with multiple AI models, and we utilize ChatGPT 4-o mini to keep response quality and query speed optimized.
 
 - **Cloudflare Workers**  
   A **serverless backend** that ensures low-latency communication between Budi’s AI engine and your environment.
