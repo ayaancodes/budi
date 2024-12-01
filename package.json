@@ -1,15 +1,25 @@
 {
-    "name": "budi-node-service",
+    "name": "budi",
     "version": "1.0.0",
     "description": "Node.js service for Budi project",
     "main": "src/index.js",
     "scripts": {
-      "start": "node src/index.js"
+      "start": "electron .",
+      "build": "webpack"
     },
     "dependencies": {
-      "express": "^4.17.1",
       "axios": "^0.21.1",
-      "node-microphone": "^0.0.5",
-      "electron": "^25.0.0"
+      "express": "^4.17.1",
+      "node-microphone": "^0.1.6",
+      "react": "^18.0.0",
+      "react-dom": "^18.0.0"
+    },
+    "devDependencies": {
+      "electron": "^25.0.0",
+      "webpack": "^5.0.0",
+      "webpack-cli": "^4.0.0",
+      "babel-loader": "^8.0.0",
+      "@babel/core": "^7.0.0",
+      "@babel/preset-react": "^7.0.0"
     }
 }
