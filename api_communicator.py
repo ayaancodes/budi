@@ -4,6 +4,9 @@ import json
 from gtts import gTTS
 import tempfile
 from playsound import playsound
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class VoiceflowAPI:
     def __init__(self):
@@ -38,7 +41,10 @@ class VoiceflowAPI:
             if response_data:
                 for item in response_data:
                     if item.get('type') == 'text':
-                        self.speak_text(item.get('payload'))
+                        message = item.get('payload', {}).get('message', '')
+                        if message:
+                            print(f"\nBudi: {message}")
+                            self.speak_text(message)
             
             return response_data
             
@@ -50,18 +56,17 @@ class VoiceflowAPI:
         """Convert text to speech and play it"""
         if not text:
             return
-            
+        
         try:
             # Create a temporary file for the audio
-            with tempfile.NamedTemporaryFile(delete=False, suffix='.mp3') as fp:
-                # Generate speech
-                tts = gTTS(text=text, lang='en')
-                tts.save(fp.name)
-                
+            with tempfile.NamedTemporaryFile(suffix='.mp3', delete=False) as temp_file:
+                # Generate speech with UK English accent (tends to be clearer and slightly faster)
+                tts = gTTS(text=text, lang='en', tld='co.uk', slow=False)
+                # Save to temporary file
+                tts.save(temp_file.name)
                 # Play the audio
-                playsound(fp.name)
-                
-                # Clean up the temporary file
-                os.unlink(fp.name)
+                playsound(temp_file.name)
+                # Clean up
+                os.unlink(temp_file.name)
         except Exception as e:
             print(f"Error in text-to-speech: {e}")

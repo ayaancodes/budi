@@ -1,4 +1,7 @@
 import sys
+import os
+import requests
+from dotenv import load_dotenv
 from PyQt5.QtCore import qInstallMessageHandler
 
 # Suppress Qt debug output
@@ -216,6 +219,30 @@ def main():
     app = QApplication(sys.argv)
     window = BudiWindow()
     window.show()
+
+    load_dotenv()
+
+    request = {
+                'type': 'launch',
+                'payload': ""
+            }
+            
+    initial = requests.post(
+        'https://general-runtime.voiceflow.com/state/user/budi-assistant/interact',
+        json={'request': request},
+        headers={
+            'Authorization': os.getenv('VOICEFLOW_API_KEY'),
+            'versionID': 'production'
+        }
+    )
+
+    if initial.status_code == 200:
+        print("Initial request successful.")
+        print("Response data:", initial.json())  # Print the response data
+    else:
+        print(f"Initial request failed with status code: {initial.status_code}")
+        print("Response content:", initial.text)  # Print the response content for debugging
+
     sys.exit(app.exec_())
 
 if __name__ == '__main__':

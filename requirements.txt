@@ -8,3 +8,4 @@ PyAudio
 pynput
 gtts
 playsound
+dotenv
