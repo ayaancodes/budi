@@ -4,7 +4,7 @@ import keyboard
 
 class BuddyApp(rumps.App):
     def __init__(self):
-        super(BuddyApp, self).__init__("Buddy", icon="icon.png")
+        super(BuddyApp, self).__init__("Buddy", icon="assets/icon.png")
         self.mic_muted = False
         self.menu = ["Mute/Unmute Mic"]
         self.audio_transcriber = audio_transcriber.AudioTranscriber()

@@ -3,3 +3,5 @@ SpeechRecognition
 requests
 rumps
 keyboard
+vosk
+PyAudio
