@@ -3,6 +3,7 @@ _Refer to the cloudFlare branch for the VSCode Extension and Cloudflare connecti
 
 Budi is a groundbreaking AI agent that redefines how developers interact with code. It eliminates the need for copy-pasting solutions and instead provides a **NO COPY & PASTE Solution** through seamless integration and real-time updates directly within your coding environment.
 
+## 🚀 Demo Link: https://drive.google.com/file/d/1nCAtxuJk349RChq8YsNTGjlneRoh1YwV/view?usp=sharing
 
 ![IMG_6067](https://github.com/user-attachments/assets/cce18f73-0786-40c6-944c-6f325372725e)
 
